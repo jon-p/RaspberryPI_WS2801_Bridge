@@ -10,6 +10,10 @@ Forked from the Hackerspaceshop RaspberryPI_WS2801_Bridge (product no longer exi
 /software/xmas.py cycles through a number of different christmasey effects:
 - an all white flickering effect (all pixels white with some flickering on/off).
 - a white/blue "rain" effect, with all pixels off and random pixels lighting up in blue or white and fading out.
-- a rainbow cycling effect
-- 
-Effects transition via a wipe effect every 5 minutes.
+- a rainbow colour-cycling effect.
+- travelling sinewave intesity effect, in white and multicoloured.
+
+Effects change every 5 minutes via a random transition, one of:
+- fading to black.
+- wiping to black from the edges.
+
