@@ -40,7 +40,7 @@ def fillAll(ledStrip, color, sleep):
 def rainbowAll(ledStrip, times, sleep):
     for t in range(0, times):
         for i in range(0, ledStrip.nLeds):
-            ledStrip.setPixel(i, rainbow((1.1 * math.pi * (i + t)) / ledStrip.nLeds))
+            ledStrip.setPixel(i, rainbow((1.1 * math.pi * (i*2 + t)) / ledStrip.nLeds))
         ledStrip.update()
         if (sleep != 0):
             time.sleep(sleep)
@@ -90,7 +90,7 @@ def knight_rider(ledStrip, trail_nb_leds=3, color=[255, 0, 0], times=5, sleep=0.
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        nrOfleds = 160
+        nrOfleds = 48
     else:
         nrOfleds = int(sys.argv[1])
     delayTime = 0.01
@@ -102,13 +102,5 @@ if __name__ == '__main__':
     ledStrip = LedStrip_WS2801(nrOfleds)
 
     while 1:
-        fillAll(ledStrip, [0, 255, 0], delayTime)
-        rainbowAll(ledStrip, 200, 0.01)
-        fillAll(ledStrip, [255, 0, 0], 0.01)
-        fillAll(ledStrip, [0, 255, 0], 0.01)
-        fillAll(ledStrip, [0, 0, 255], 0.01)
-        antialisedPoint(ledStrip, [255, 0, 0], 0.5, 0.3)
-        antialisedPoint(ledStrip, [0, 255, 0], 0.5, 0.3)
-        antialisedPoint(ledStrip, [0, 0, 255], 0.5, 0.3)
-        rainbowAll(ledStrip, 500, 0.01)
-        knight_rider(ledStrip)
+        fillAll(ledStrip, [5, 5, 5], delayTime)
+        rainbowAll(ledStrip, 500, 0.001)

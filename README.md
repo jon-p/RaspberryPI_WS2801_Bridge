@@ -1,9 +1,18 @@
-RaspberryPI_WS2801_Bridge
-=========================
+this is the blinkenpi project
 
-Software for Raspberry PI to WS2801 Bridge 
-/pcb  folder includes latest schematic and baord file (eagle)  + pdf
-/software includes all the raspberry pi software
-/image contains one big image file that you can directly dd to an SD card (min 4GB)
+it implements a WS2801 blinken interface for the raspberry pi 2 ws2801 bridge found here: http://www.hackerspaceshop.com/raspberrypi-things/raspberrypi-ws2801.html
 
-http://www.hackerspaceshop.com/ledstrips/raspberrypi-ws2801.html
+
+the hardware SPI is used and we need py-spidev for that.
+a compiled spidev.so is included in this folder.
+
+you can compile your own libraries for spidev if you like to. 
+we found the sources here:
+
+https://github.com/doceme/py-spidev
+thanks doceme!
+
+have fun!
+-flo
+
+
