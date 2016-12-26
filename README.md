@@ -1,10 +1,8 @@
-
-
 RaspberryPI WS2801 XMAS light effects
 =====================================
 
 Forked from the Hackerspaceshop RaspberryPI_WS2801_Bridge (product no longer exists).
-​
+
 /pcb  folder includes latest schematic and baord file (eagle)  + pdf
 ​
 /software/xmas.py cycles through a number of different christmasey effects:
@@ -44,5 +42,3 @@ thanks doceme!
 
 have fun!
 -flo
-
-
