@@ -1,3 +1,11 @@
+Original repo readme below.
+
+Run install.sh to isntall a startup script that will automatically run xmas.py on boot.
+
+xmas.py runs through a series of Christmasey animations/effects fot WS2801 based lights.
+
+--------------8<------------
+
 this is the blinkenpi project
 
 it implements a WS2801 blinken interface for the raspberry pi 2 ws2801 bridge found here: http://www.hackerspaceshop.com/raspberrypi-things/raspberrypi-ws2801.html
