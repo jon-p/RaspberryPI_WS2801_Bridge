@@ -19,7 +19,12 @@ Effects change every 5 minutes via a random transition, one of:
 
 Run ./install.sh to isntall a startup script that will automatically run xmas.py on boot.
 
---------------8<------------
+Jon
+
+
+-----------------8<----------------
+
+
 Original hackerspace readme
 ===========================
 
